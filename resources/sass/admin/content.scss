@@ -1,0 +1,85 @@
+html, body, #vue-admin {
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100%;
+}
+
+main{
+    flex-grow: 1;
+
+    padding: 15px 15px 15px 15px;
+
+    @include media-breakpoint-down(xs) {
+        padding: 10px 5px 0 5px;
+    }
+}
+
+.panel-title{
+    margin-bottom: 15px;
+
+    .row{
+        border-bottom: 3px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    h1 {
+        font-weight: 400;
+        color: #383838;
+        font-size: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(xs) {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+    }
+
+    span{
+        margin-right: 5px;
+    }
+}
+
+
+.panel-sub{
+    padding-bottom:10px;
+}
+
+.form-well{
+    overflow: hidden;
+    padding: 20px;
+    border: 3px solid #eee;
+    border-radius: 0;
+
+    @include media-breakpoint-down(xs) {
+        padding: 0;
+        border: 0;
+    }
+
+    button{
+        float: right;
+        span{
+            margin-right: 5px;
+        }
+    }
+
+    .form-check{
+        float: left;
+        margin-top: 5px;
+        label{
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    label{
+        margin-bottom: 2px;
+        font-weight: 500;
+    }
+}
+
+
+

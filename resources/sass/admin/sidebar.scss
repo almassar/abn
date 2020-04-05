@@ -1,0 +1,47 @@
+.sidebar{
+    flex-basis: 250px;
+    flex-shrink: 0;
+    background: #eeeeee;
+}
+
+.sidebar-title{
+    font-size: 20px;
+    color: #42526e;
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+
+    &:hover{
+        color: #42526e;
+        text-decoration: none;
+    }
+}
+
+
+.sidebar ul{
+    a{
+        color:#383838;
+        display: block;
+        padding: 10px 10px 10px 10px;
+
+        span{
+            margin-right: 6px;
+            font-size: 16px;
+            float: left;
+            display: block;
+
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+
+        }
+
+        &:hover{
+            color: white;
+            background: #263949;
+            text-decoration: none;
+        }
+    }
+}
+
+

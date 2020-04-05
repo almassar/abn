@@ -1,0 +1,26 @@
+.login-page{
+    flex-grow: 1;
+
+    background: #44C3E6;
+
+    form{
+        background: white;
+        padding: 25px;
+    }
+
+
+    .form-group{
+        margin-bottom: 30px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    h3{
+        text-align: center;
+        font-weight: 300;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}

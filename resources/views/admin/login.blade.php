@@ -9,7 +9,7 @@
                 <form action="{{ route('login') }}" method="POST">
                     {!! csrf_field() !!}
 
-                    <h3>TeoLeo</h3>
+                    <h3>ABN</h3>
 
                     @if($errors->count() > 0)
                         <div class="alert alert-danger">

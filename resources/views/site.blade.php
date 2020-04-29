@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset($pathBuildCssJs .'/'.'vendor.css') }}">
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset($pathBuildCssJs .'/'.'site.css') }}">
-    <title>{{ $seo['title'] ?? 'Каталог компаниии Алматы, Астаны, Актау' }}</title>
+    <title>{{ $seo['title'] ?? 'Добро пожаловать в АБН Технологии' }}</title>
 </head>
 <body>
 

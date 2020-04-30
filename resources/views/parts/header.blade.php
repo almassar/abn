@@ -87,25 +87,36 @@
         <ul>
             <li>
                 <a href="">
+                    <span><i class="fas fa-seedling fa-fw"></i></span>
                     Внесение удобрений
                 </a>
             </li>
 
             <li>
                 <a href="">
+                    <span><i class="fas fa-seedling fa-fw"></i></span>
                     Посевная и посадочная техника
                 </a>
             </li>
 
             <li>
                 <a href="">
+                    <span><i class="fas fa-seedling fa-fw"></i></span>
                     Техника для обработки почвы
                 </a>
             </li>
 
             <li>
                 <a href="">
+                    <span><i class="fas fa-seedling fa-fw"></i></span>
                     Удобрение
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span><i class="fas fa-cogs fa-fw"></i></span>
+                    Запасные части
                 </a>
             </li>
 

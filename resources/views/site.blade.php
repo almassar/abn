@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
     <link media="all" type="text/css" rel="stylesheet" href="{{ asset($pathBuildCssJs .'/'.'vendor.css') }}">
-    <link media="all" type="text/css" rel="stylesheet" href="{{ asset($pathBuildCssJs .'/'.'site.css') }}">
+    <link media="all" type="text/css" rel="stylesheet" href="{{ asset($pathBuildCssJs .'/'.'site.css?v1') }}">
     <title>{{ $seo['title'] ?? 'Добро пожаловать в АБН Технологии' }}</title>
 </head>
 <body>

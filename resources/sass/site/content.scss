@@ -68,7 +68,7 @@ main{
 
 .category-panel{
     background-color: #f3f3f3;
-    padding: 12px;
+    padding: 10px;
     margin-top: 15px;
     ul{
         display: flex;
@@ -78,6 +78,11 @@ main{
             color:#428BCA;
             font-size: 18px;
             font-weight: 500;
+
+            span{
+                color:$brand-color;
+                font-size: 30px;
+            }
         }
 
     }
@@ -212,12 +217,13 @@ main{
 
 
  .index-partner{
+     padding: 20px 0;
     ul{
         display: flex;
         justify-content: space-between;
 
         img{
-            max-width: 100px;
+            max-height: 60px;
         }
     }
  }

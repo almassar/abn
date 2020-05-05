@@ -2,13 +2,13 @@
 <div class="container">
     <ul>
         <li>
-            <a href="#">
+            <a href="{{ url('/') }}">
                 <span><i class="fas fa-home fa-fw"></i></span>
                 Главная
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ url('news') }}">
                 <span><i class="fas fa-newspaper fa-fw"></i></span>
                 Новости
             </a>
@@ -26,13 +26,13 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ url('about') }}">
                 <span><i class="fas fa-building fa-fw"></i></span>
                 О компании
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ url('contact') }}">
                 <span><i class="fas fa-phone-alt fa-fw"></i></span>
                 Контакты
             </a>
@@ -86,35 +86,35 @@
     <div class="container">
         <ul>
             <li>
-                <a href="">
+                <a href="{{ url('products/1') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
                     Внесение удобрений
                 </a>
             </li>
 
             <li>
-                <a href="">
-                    <span><i class="fas fa-seedling fa-fw"></i></span>
+                <a href="{{ url('products/2') }}">
+                    <span><i class="fas fa-tractor fa-fw"></i></span>
                     Посевная и посадочная техника
                 </a>
             </li>
 
             <li>
-                <a href="">
+                <a href="{{ url('products/3') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
                     Техника для обработки почвы
                 </a>
             </li>
 
             <li>
-                <a href="">
+                <a href="{{ url('products/4') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
                     Удобрение
                 </a>
             </li>
 
             <li>
-                <a href="">
+                <a href="{{ url('products/5') }}">
                     <span><i class="fas fa-cogs fa-fw"></i></span>
                     Запасные части
                 </a>

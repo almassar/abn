@@ -12,4 +12,21 @@ class IndexController extends SiteBaseController
     {
         return view('site.index');
     }
+
+    public function contact()
+    {
+        $seo['title'] = 'Контакты';
+
+        return view('site.contact')->with(compact('seo'));
+      
+    }
+
+    public function about()
+    {
+        $seo['title'] = 'О компании';
+
+        return view('site.about')->with(compact('seo'));
+      
+    }
+
 }

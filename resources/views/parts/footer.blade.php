@@ -18,38 +18,32 @@
 <div class="col-xl-13 footer-menu">
         <ul>
         <li>
-            <a href="#">
-                
+            <a href="{{ url('/') }}">
                 Главная
             </a>
         </li>
         <li>
-            <a href="#">
-               
+            <a href="{{ url('news') }}">
                 Новости
             </a>
         </li>
         <li>
             <a href="#">
-                
                 Партнеры
             </a>
         </li>
         <li>
             <a href="#">
-                
                 Видео
             </a>
         </li>
         <li>
-            <a href="#">
-               
+            <a href="{{ url('about') }}">
                 О компании
             </a>
         </li>
         <li>
-            <a href="#">
-                
+            <a href="{{ url('contact') }}">
                 Контакты
             </a>
         </li>

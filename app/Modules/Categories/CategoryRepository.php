@@ -4,13 +4,11 @@ namespace App\Modules\Categories;
 
 use App\Modules\Repositories\Repository;
 
-abstract class CategoryRepository extends Repository
+class CategoryRepository extends Repository
 {
-    abstract public function model();
-
-    public function roots()
+    public function model()
 	{
-	    return (static::model())::whereNull('parent_id')->get();
-    }
+		return Category::class;
+	}
 
 }

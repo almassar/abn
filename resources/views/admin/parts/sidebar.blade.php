@@ -1,4 +1,4 @@
-<a class="sidebar-title" href="{{ url('/') }}">TeoLeo.ru</a>
+<a class="sidebar-title" href="{{ url('/') }}">АБН</a>
 
 <ul>
     <li>
@@ -9,23 +9,23 @@
     </li>
 
     <li>
-        <a href="{{ url('admin/company-categories') }}">
+        <a href="{{ url('admin/categories') }}">
             <span><i class="fas fa-th fa-fw"></i></span>
             Категории
         </a>
     </li>
 
      <li>
-        <a href="{{ url('admin/companies') }}">
+        <a href="{{ url('admin/products') }}">
             <span><i class="far fa-building fa-fw"></i></span>
-            Компании
+            Продукция
         </a>
     </li>
 
     <li>
-        <a href="{{ url('admin/tags') }}">
+        <a href="{{ url('admin/news') }}">
             <span><i class="fas fa-tags fa-fw"></i></span>
-            Тэги
+            Новости
         </a>
     </li>
 

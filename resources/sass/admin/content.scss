@@ -82,4 +82,15 @@ main{
 }
 
 
+.category-nav{
+    margin: 0 10px 10px 10px;
+    
+    display:flex;
+    justify-content: space-between;
 
+    a{
+        color:#383838;
+        background-color: #eee;
+        padding: 5px;
+    }
+}

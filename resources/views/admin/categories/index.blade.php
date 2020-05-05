@@ -1,13 +1,9 @@
 @extends('admin')
 @section('content')
 
-@component('admin.parts.panel-title', ['url' => url('admin/article-form') ])
+@component('admin.parts.panel-title')
     @slot('title')
         {{ $seo['title'] }}
-    @endslot
-
-    @slot('titleAddBtn')
-        <span class="d-none d-sm-inline">Добавить</span> категорию
     @endslot
 @endcomponent
 
@@ -15,11 +11,30 @@
 
 <div class="container-fluid">
 
-     <div class="category-tree-site">
-        {!! View::make('components.categories')->with([
-            'prefixUrl' => 'admin/company-categories', 'repository' => new \App\Modules\CompanyCategories\CompanyCategoryRepository()
-        ]) !!}
-    </div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Название</th>
+        </tr>
+    </thead>
+        
+    @foreach($categories as $category)
+        <tr>
+            <td>
+                {{ $loop->iteration }}
+            </td>
+
+            <td>
+                <a class="table-btn-edit"  title="Редактировать" href="#">
+                    {{ $category->name }}
+                </a>
+            </td>
+
+        </tr>
+    @endforeach
+
+</table>
 
 </div>
 @stop

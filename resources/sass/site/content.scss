@@ -175,7 +175,7 @@ main{
   footer{
       background: $brand-color;
       color:white;
-      padding: 20px;
+      padding: 25px;
 
       a{
           color: white;
@@ -227,3 +227,19 @@ main{
         }
     }
  }
+
+.products{
+    .title-page{
+        color:$brand-color;
+        font-size: 20px;
+    }
+
+    li {
+        margin-bottom: 20px;
+        border-bottom: 3px solid $brand-color;
+
+        a{ 
+            font-size: 18px;
+        }
+    }
+}

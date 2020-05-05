@@ -3,14 +3,24 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Cities\CityRepository;
+use App\Modules\News\News;
+use App\Modules\News\NewsRepository;
 use Illuminate\Http\Request;
 
 class IndexController extends SiteBaseController
 {
+    private $newsRepository;
+
+    public function __construct(NewsRepository $newsRepository)
+    {
+        $this->newsRepository = $newsRepository;
+    }
+    
     public function index()
     {
-        return view('site.index');
+        $news = $this->newsRepository->orderBy('id', 'desc')->get()->take(4);
+        
+        return view('site.index')->with(compact('news', 'seo'));
     }
 
     public function contact()

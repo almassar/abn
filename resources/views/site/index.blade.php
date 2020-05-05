@@ -64,25 +64,14 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-xl-6">
-            <img src="{{ asset('storage/slides/2.jpg') }}" alt="">
-            <a href="">День Поля 2019 посвящённый 65-ти летию освоения целинных и залежных земель</a>
-        </div>
-
-        <div class="col-xl-6">
-            <img src="{{ asset('storage/slides/3.jpg') }}" alt="">
-            <a href="">Семинар QAZAQ ORGANIC</a>
-        </div>
-
-        <div class="col-xl-6">
-            <img src="{{ asset('storage/slides/4.jpg') }}" alt="">
-            <a href="">Qazaq organic food 2018/«KazOil 2018»</a>
-        </div>
-
-        <div class="col-xl-6">
-            <img src="{{ asset('storage/slides/5.jpg') }}" alt="">
-            <a href="">AgriTek/ FarmTek Astana 2018</a>
-        </div>
+        @foreach ($news as $lastNews)
+            <div class="col-xl-6">
+                <img src="{{ asset('storage/news/'.$lastNews->id.'.jpg') }}" alt="">
+                <a href="{{ url('news-view/'.$lastNews->id) }}">{{ $lastNews->name }}</a>
+            </div>
+        @endforeach
+        
+       
     </div>
 </div>
 </div>

@@ -18,6 +18,8 @@ class IndexController extends SiteBaseController
     
     public function index()
     {
+        $seo['title'] = 'АБН технологии';
+
         $news = $this->newsRepository->orderBy('id', 'desc')->get()->take(4);
         
         return view('site.index')->with(compact('news', 'seo'));

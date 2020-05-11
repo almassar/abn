@@ -19,4 +19,9 @@ class Product extends Model
     {
         return $this->belongsTo(Type::class);
     }
+
+    public function ann()
+    {
+        return  substr(strip_tags($this->description), 0, 300).' ... ';
+    }
 }

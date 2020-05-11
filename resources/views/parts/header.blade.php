@@ -86,6 +86,19 @@
     <div class="container">
         <ul>
             <li>
+                <a href="{{ url('products/3') }}">
+                    <span><i class="fas fa-seedling fa-fw"></i></span>
+                    Обработка почвы
+                </a>
+
+                <ul>
+                    <li><a href="{{ url('products/type/5') }}">Вертикальная почвообработка</a></li>
+                    <li><a href="{{ url('products/type/6') }}">Традиционная почвообработка</a></li>
+                </ul>
+
+            </li>
+
+            <li>
                 <a href="{{ url('products/1') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
                     Опрыскиватели
@@ -112,16 +125,17 @@
             </li>
 
             <li>
-                <a href="{{ url('products/3') }}">
-                    <span><i class="fas fa-seedling fa-fw"></i></span>
-                    Техника для обработки почвы
+                <a href="{{ url('products/7') }}">
+                    <span><i class="fas fa-snowplow fa-fw"></i></span>
+                    Уборочные агрегаты
                 </a>
-
-                <ul>
-                    <li><a href="{{ url('products/type/5') }}">Вертикальная почвообработка</a></li>
-                    <li><a href="{{ url('products/type/6') }}">Традиционная почвообработка</a></li>
-                </ul>
-
+            </li>
+            
+            <li>
+                <a href="{{ url('products/6') }}">
+                    <span><i class="fas fa-cogs fa-fw"></i></span>
+                    Семена
+                </a>
             </li>
 
             <li>
@@ -142,19 +156,7 @@
                 </a>
             </li>
 
-            <li>
-                <a href="{{ url('products/6') }}">
-                    <span><i class="fas fa-cogs fa-fw"></i></span>
-                    Семена
-                </a>
-            </li>
-
-            <li>
-                <a href="{{ url('products/7') }}">
-                    <span><i class="fas fa-cogs fa-fw"></i></span>
-                    Уборочные агрегаты
-                </a>
-            </li>
+           
         </ul>
     </div>
 </div>

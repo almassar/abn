@@ -21,8 +21,13 @@
                     </a>
                 </div>
 
-                {!! $product->description !!}
+                <div>
+                    {!! $product->ann() !!}
+                </div>
 
+                <a href="{{ url('product-view/'.$product->id) }}" class='btn btn-success btn-sm' style="float: right; bottom:0;">
+                    Далее<span style="margin-left: 5px;"><i class="fas fa-arrow-circle-right"></i></span>
+                </a>
                 
             </li>
         @endforeach

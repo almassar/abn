@@ -97,15 +97,18 @@ main{
         }
 
         ul{
+            z-index:100;
             display: none;
-            
+            position: absolute;
+            background-color: #c6c6c6;
+            padding: 10px;
             li {
                 border-bottom: 1px silver solid;
                 margin-bottom: 8px;
                 text-align: left;
                 a{
                     color: $text-color;
-                    font-weight: 400;
+                    font-weight: 500;
                 }
             }
 
@@ -175,11 +178,11 @@ main{
   }
 
 
-  .index-service{
-      background: #f3f3f3;
-      padding: 30px 0;
+.index-service{
+    background: #f3f3f3;
+    padding: 30px 0;
 
-      .header-service{
+    .header-service{
           color:$brand-color;
           span{
               float: left;
@@ -256,17 +259,24 @@ main{
 
  .title-page{
     color:$brand-color;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
+    margin: 10px 0 15px 0;
 }
 
 .products{
-   
+   img{ 
+       float: left;
+       border-radius: 8px;
+       border:1px solid silver;
+       margin-right: 10px;
+   }
 
     li {
         margin-bottom: 20px;
         border-bottom: 3px solid $brand-color;
-
+        padding-bottom: 10px;
+        overflow: hidden;
         a{ 
             font-size: 18px;
         }

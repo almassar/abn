@@ -22,6 +22,6 @@ class Product extends Model
 
     public function ann()
     {
-        return  substr(strip_tags($this->description), 0, 300).' ... ';
+        return  substr(strip_tags($this->description), 0, 400).' ... ';
     }
 }

@@ -1,9 +1,13 @@
 @extends('admin')
 @section('content')
 
-@component('admin.parts.panel-title', ['url' => url('admin/article-form') ])
+@component('admin.parts.panel-title', ['url' => url('admin/product-form') ])
     @slot('title')
         {{ $seo['title'].' - '.$products->total().' штук' }}
+    @endslot
+
+    @slot('titleAddBtn')
+        <span class="d-none d-sm-inline">Добавить</span> продукцию
     @endslot
 
 @endcomponent

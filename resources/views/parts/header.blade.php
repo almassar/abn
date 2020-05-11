@@ -90,6 +90,11 @@
                     <span><i class="fas fa-seedling fa-fw"></i></span>
                     Опрыскиватели
                 </a>
+
+                <ul>
+                    <li><a href="{{ url('products/type/10') }}">Cамоходные</a></li>
+                    <li><a href="{{ url('products/type/11') }}">Прицепные</a></li>
+                </ul>
             </li>
 
             <li>

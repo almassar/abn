@@ -28,7 +28,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ url('partners') }}">
                 Партнеры
             </a>
         </li>

@@ -25,7 +25,7 @@
             </div>
 
             <div class="row">
-                <div class="col-24">
+                <div class="col-12">
                     <div class="form-group">
                         <label for="name">Категория</label>
                         <select name='category_id' required class="form-control">
@@ -38,6 +38,29 @@
                         </select>
                     </div>
                 </div>
+
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="name">Подкатегория</label>
+                        <select name='type_id' required class="form-control">
+                            @foreach ($categories as $category)
+                                <optgroup label="{{ $category->name }}">
+                                    @foreach ($category->types as $type)
+                                        <option value="{{ $type->id }}"  {{ $type->id == optional($product)->type_id ? 'selected' : '' }}>
+                                            {{ $type->name }}
+                                        </option>
+                                    @endforeach
+                                </optgroup>
+                            @endforeach
+
+                            <option value="9"  {{ 9 == optional($product)->type_id ? 'selected' : '' }}>
+                                (пусто)
+                            </option>
+
+                        </select>
+                    </div>
+                </div>
+
             </div>
 
             <div class="row">
@@ -48,8 +71,10 @@
                     </div>
                  </div>
 
-                @if(Storage::exists('public/products/'.$product->id.'.jpg'))
-                    <img src="{{ asset('storage/products/'.$product->id.'.jpg') }}" alt="" style="width: 200px">
+                @if(Storage::exists('public/products/'.optional($product)->id.'.jpg'))
+                    <div class="form-group">
+                        <img src="{{ asset('storage/products/'.$product->id.'.jpg') }}" alt="" style="width: 200px">
+                    </div>
                 @endif
             
             </div>

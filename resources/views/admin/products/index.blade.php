@@ -3,7 +3,7 @@
 
 @component('admin.parts.panel-title', ['url' => url('admin/article-form') ])
     @slot('title')
-        {{ $seo['title'] }}
+        {{ $seo['title'].' - '.$products->total().' штук' }}
     @endslot
 
 @endcomponent
@@ -29,6 +29,7 @@
                 <th>Название</th>
                 <th class="d-none d-md-table-cell">Фото</th>
                 <th class="d-none d-md-table-cell">Категория</th>
+                <th class="d-none d-md-table-cell">Подкатегория</th>
                 <th class="d-none d-md-table-cell">Описание</th>
                 <th class="d-none d-md-table-cell"></th>
             </tr>
@@ -54,6 +55,10 @@
 
             <td>
                 {{ $product->category->name }}
+            </td>
+
+            <td>
+                {{ $product->type->name }}
             </td>
 
 

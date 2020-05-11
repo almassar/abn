@@ -14,7 +14,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ url('partners') }}">
                 <span><i class="fas fa-handshake fa-fw"></i></span>
                 Партнеры
             </a>
@@ -88,15 +88,22 @@
             <li>
                 <a href="{{ url('products/1') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
-                    Внесение удобрений
+                    Опрыскиватели
                 </a>
             </li>
 
             <li>
                 <a href="{{ url('products/2') }}">
                     <span><i class="fas fa-tractor fa-fw"></i></span>
-                    Посевная и посадочная техника
+                    Посевная техника
                 </a>
+
+                <ul>
+                    <li><a href="{{ url('products/type/1') }}">Пневматические сеялки</a></li>
+                    <li><a href="{{ url('products/type/2') }}">Компактные сеялки</a></li>
+                    <li><a href="{{ url('products/type/3') }}">Механические сеялки</a></li>
+                    <li><a href="{{ url('products/type/4') }}">Пропашные сеялки</a></li>
+                </ul>
             </li>
 
             <li>
@@ -104,13 +111,23 @@
                     <span><i class="fas fa-seedling fa-fw"></i></span>
                     Техника для обработки почвы
                 </a>
+
+                <ul>
+                    <li><a href="{{ url('products/type/5') }}">Вертикальная почвообработка</a></li>
+                    <li><a href="{{ url('products/type/6') }}">Традиционная почвообработка</a></li>
+                </ul>
+
             </li>
 
             <li>
                 <a href="{{ url('products/4') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
-                    Удобрение
+                    Удобрения и СЗР
                 </a>
+                <ul>
+                    <li><a href="{{ url('products/type/7') }}">Минеральные удобрения ИЗАГРИ</a></li>
+                    <li><a href="{{ url('products/type/8') }}">Биопрепараты БИОСФЕРА</a></li>
+                </ul>
             </li>
 
             <li>
@@ -120,6 +137,19 @@
                 </a>
             </li>
 
+            <li>
+                <a href="{{ url('products/6') }}">
+                    <span><i class="fas fa-cogs fa-fw"></i></span>
+                    Семена
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url('products/7') }}">
+                    <span><i class="fas fa-cogs fa-fw"></i></span>
+                    Уборочные агрегаты
+                </a>
+            </li>
         </ul>
     </div>
 </div>

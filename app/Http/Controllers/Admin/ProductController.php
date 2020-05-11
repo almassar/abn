@@ -26,9 +26,9 @@ class ProductController extends Controller
         $seo['title'] = 'Продукция';
 
         if (is_null($category))
-            $products = $this->productRepository->paginate();
+            $products = $this->productRepository->paginate(50);
         else
-            $products = $this->productRepository->where(['category_id' => $category->id])->paginate();
+            $products = $this->productRepository->where(['category_id' => $category->id])->paginate(50);
 
         $categories = $this->categoryRepository->get();
 

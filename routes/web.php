@@ -13,6 +13,8 @@ Route::group(['namespace' => 'Site' ], function () {
     Route::get('news',             'NewsController@index');
     Route::get('news-view/{news}', 'NewsController@newsView');
 
+    Route::get('partners',         'PartnerController@index');
+
 });
 
 

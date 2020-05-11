@@ -3,12 +3,10 @@
 
 <div class="container">
     <agile :autoplay=true>
-        <img class="slide" src="{{ asset('storage/slides/1.jpg') }}"/>
-        <img class="slide" src="{{ asset('storage/slides/2.jpg') }}"/>
-        <img class="slide" src="{{ asset('storage/slides/3.jpg') }}"/>
-        <img class="slide" src="{{ asset('storage/slides/4.jpg') }}"/>
-        <img class="slide" src="{{ asset('storage/slides/5.jpg') }}"/>
-        <img class="slide" src="{{ asset('storage/slides/6.jpg') }}"/>
+
+        @foreach ($slides as $slide)
+            <img class="slide" src="{{ asset('storage/slides/'.$slide->id.'.jpg') }}"/>
+        @endforeach
       
         <template slot="prevButton"><i class="fas fa-chevron-left"></i></template>
         <template slot="nextButton"><i class="fas fa-chevron-right"></i></template>
@@ -66,7 +64,7 @@
 
         @foreach ($news as $lastNews)
             <div class="col-xl-6">
-                <img src="{{ asset('storage/news/'.$lastNews->id.'.jpg') }}" alt="">
+                <img src="{{ asset('storage/news/'.$lastNews->id.'.jpg') }}" alt="{{ $lastNews->name }}">
                 <a href="{{ url('news-view/'.$lastNews->id) }}">{{ $lastNews->name }}</a>
             </div>
         @endforeach
@@ -81,57 +79,18 @@
         <div class="row">
             <div class="col-xl-24">
                 <ul>
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/bicchi.png') }}" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/einbock.png') }}" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/great_plains.png') }}" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/pla.png') }}" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/изарги.png') }}" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/казагрофинанс.png') }}" alt="">
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="" target="_blank">
-                            <img src="{{ asset('images/техно_лизинг.png') }}" alt="">
-                        </a>
-                    </li>
+                    @foreach ($partners as $partner)
+                        <li>
+                            <a href="{{ $partner->link }}" target="_blank">
+                                <img src="{{ asset('storage/partners/'.$partner->id.'.jpg') }}" alt="{{ $partner->name }} ">
+                            </a>
+                        </li>
+                    @endforeach
+                    
                 </ul>
-            
             </div>
-        
         </div>
-    
     </div>
-
 </div>
-
-
 
 @stop

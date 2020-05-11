@@ -30,6 +30,20 @@
     </li>
 
     <li>
+        <a href="{{ url('admin/slides') }}">
+            <span><i class="fas fa-image fa-fw"></i></span>
+            Слайды
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ url('admin/partners') }}">
+            <span><i class="fas fa-handshake fa-fw"></i></span>
+            Партнеры
+        </a>
+    </li>
+
+    <li>
         <a href="{{ url('logout') }}">
             <span><i class="fas fa-sign-out-alt fa-fw"></i></span>
             Выход

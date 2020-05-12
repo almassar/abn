@@ -117,10 +117,14 @@
                 </a>
 
                 <ul>
-                    <li><a href="{{ url('products/type/1') }}">Пневматические сеялки</a></li>
-                    <li><a href="{{ url('products/type/2') }}">Компактные сеялки</a></li>
-                    <li><a href="{{ url('products/type/3') }}">Механические сеялки</a></li>
-                    <li><a href="{{ url('products/type/4') }}">Пропашные сеялки</a></li>
+                    <li><a href="{{ url('products/type/1') }}">Пневматические сеялки GreatPlains</a></li>
+                    <li><a href="{{ url('products/type/2') }}">Компактные сеялки GreatPlains</a></li>
+                    <li><a href="{{ url('products/type/3') }}">Механические сеялки GreatPlains</a></li>
+                    <li><a href="{{ url('products/type/4') }}">Пропашные сеялки GreatPlains</a></li>
+                    <li><a href="{{ url('products/type/12') }}">Сеялки Einbok</a></li>
+                    <li><a href="{{ url('products/type/13') }}">Сеялки PLA</a></li>
+
+
                 </ul>
             </li>
 

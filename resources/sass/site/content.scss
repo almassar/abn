@@ -282,3 +282,21 @@ main{
         }
     }
 }
+
+
+.partner-item{
+    overflow: hidden;
+    border-bottom: 3px solid $brand-color;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    img {
+        float: left;
+        margin-right: 10px;
+        width: 100px;
+    }
+
+    h3{
+        font-size: 17px;
+        color:$text-color;
+    }
+}

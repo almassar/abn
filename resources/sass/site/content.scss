@@ -300,3 +300,21 @@ main{
         color:$text-color;
     }
 }
+
+.news-item{
+    overflow: hidden;
+    border-bottom: 3px solid $brand-color;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    a{
+        font-size:18px;
+    }
+
+
+    img{
+        float:left;
+        margin-right: 10px;
+        width: 100px;
+    }
+}

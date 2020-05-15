@@ -48,7 +48,7 @@
         <div class="col-xl-4">
             <div class="logo">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('images/logo.jpg')}}">
+                    <img src="{{ asset('images/logo.png')}}">
                    <!-- 
                     <div class="logo-title"> АБН</div>
                     <div class="logo-desc">технологий</div>

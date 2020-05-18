@@ -92,10 +92,12 @@
                 </a>
 
                 <ul>
-                    <li><a href="{{ url('products/type/5') }}">Вертикальная почвообработка</a></li>
-                    <li><a href="{{ url('products/type/6') }}">Традиционная почвообработка</a></li>
+                    <li><a href="{{ url('products/type/5') }}">Great Plains - Вертикальная почвообработка</a></li>
+                    <li><a href="{{ url('products/type/6') }}">Great Plains - Традиционная почваобработка</a></li>
+                    <li><a href="{{ url('products/type/14') }}">Einbock - Минимальная обработка почвы</a></li>
+                    <li><a href="{{ url('products/type/15') }}">Einbock - Механические машины для ухода</a></li>
+                    <li><a href="{{ url('products/type/16') }}">Einbock - Предпосевная подготовка почвы</a></li>
                 </ul>
-
             </li>
 
             <li>
@@ -105,8 +107,14 @@
                 </a>
 
                 <ul>
-                    <li><a href="{{ url('products/type/10') }}">Cамоходные</a></li>
-                    <li><a href="{{ url('products/type/11') }}">Прицепные</a></li>
+                    <li><a href="{{ url('products/type/10') }}">Cамоходные - МАР 3 2900 </a></li>
+                    <li><a href="{{ url('products/type/18') }}">Cамоходные - МАР 3 3300 </a></li>
+                    <li><a href="{{ url('products/type/19') }}">Cамоходные - МАР 3 3300Н </a></li>
+                    <li><a href="{{ url('products/type/20') }}">Cамоходные - МАР 3 3600 </a></li>
+                    <li><a href="{{ url('products/type/21') }}">Cамоходные - МАР 3 4100 </a></li>
+                    
+                    <li><a href="{{ url('products/type/11') }}">Прицепные - MLP 3000 </a></li>
+                    <li><a href="{{ url('products/type/17') }}">Прицепные - MLP 3000F</a></li>
                 </ul>
             </li>
 
@@ -120,9 +128,9 @@
                     <li><a href="{{ url('products/type/1') }}">Пневматические сеялки GreatPlains</a></li>
                     <li><a href="{{ url('products/type/2') }}">Компактные сеялки GreatPlains</a></li>
                     <li><a href="{{ url('products/type/3') }}">Механические сеялки GreatPlains</a></li>
-                    <li><a href="{{ url('products/type/4') }}">Пропашные сеялки GreatPlains</a></li>
+                    <li><a href="{{ url('products/type/4') }}">Пневматические сеялки точного высева  GreatPlains</a></li>
                     <li><a href="{{ url('products/type/12') }}">Сеялки Einbok</a></li>
-                    <li><a href="{{ url('products/type/13') }}">Сеялки PLA</a></li>
+                   <!-- <li><a href="{{ url('products/type/13') }}">Сеялки PLA</a></li>-->
 
 
                 </ul>

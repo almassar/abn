@@ -107,6 +107,7 @@
                 </a>
 
                 <ul>
+                    <li><a href="{{ url('products/type/22') }}">Самоходный опрыскиватели PLA </a></li>
                     <li><a href="{{ url('products/type/10') }}">Cамоходные - МАР 3 2900 </a></li>
                     <li><a href="{{ url('products/type/18') }}">Cамоходные - МАР 3 3300 </a></li>
                     <li><a href="{{ url('products/type/19') }}">Cамоходные - МАР 3 3300Н </a></li>

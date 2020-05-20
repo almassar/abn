@@ -87,7 +87,7 @@
         <ul>
             <li>
                 <a href="{{ url('products/3') }}">
-                    <span><i class="fas fa-seedling fa-fw"></i></span>
+                    <span><i class="fas fa-pen-fancy fa-fw"></i></span>
                     Обработка почвы
                 </a>
 
@@ -102,7 +102,7 @@
 
             <li>
                 <a href="{{ url('products/1') }}">
-                    <span><i class="fas fa-seedling fa-fw"></i></span>
+                    <span><i class="fas fa-tint fa-fw"></i></span>
                     Опрыскиватели
                 </a>
 
@@ -146,7 +146,7 @@
             
             <li>
                 <a href="{{ url('products/6') }}">
-                    <span><i class="fas fa-cogs fa-fw"></i></span>
+                    <span><i class="fas fa-tree fa-fw"></i></span>
                     Семена
                 </a>
             </li>

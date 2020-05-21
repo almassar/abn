@@ -43,6 +43,13 @@
         </a>
     </li>
 
+     <li>
+        <a href="{{ url('admin/videos') }}">
+            <span><i class="fas fa-video fa-fw"></i></span>
+            Видео
+        </a>
+    </li>
+
     <li>
         <a href="{{ url('logout') }}">
             <span><i class="fas fa-sign-out-alt fa-fw"></i></span>

@@ -20,7 +20,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="{{ url('videos') }}">
                 <span><i class="fas fa-video fa-fw"></i></span>
                 Видео
             </a>
@@ -59,7 +59,7 @@
         </div>
 
         <div class="col-xl-6 header-contact">
-            <div><span><i class="fas fa-mobile-alt fa-fw"></i></span> +7 (777) 797-63-36</div>
+            <div><span><i class="fas fa-mobile-alt fa-fw"></i></span>+7 (771) 797-73-40</div>
             <div><span><i class="fas fa-envelope fa-fw"></i></span> direction@abntechnology.kz</div>
         </div>
 

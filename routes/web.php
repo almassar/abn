@@ -16,6 +16,8 @@ Route::group(['namespace' => 'Site' ], function () {
 
     Route::get('partners',         'PartnerController@index');
 
+    Route::get('videos',         'VideoController@index');
+
 });
 
 

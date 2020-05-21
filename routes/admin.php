@@ -31,4 +31,9 @@ Route::group(['namespace' => 'Admin' ], function () {
     Route::post('slide-save/{slide?}', 'SlideController@save');
     Route::get ('slide-delete/{slide}','SlideController@delete');
 
+    Route::get ('videos',    'VideoController@index');
+    Route::get ('video-form/{video?}', 'VideoController@form');
+    Route::post('video-save/{video?}', 'VideoController@save');
+    Route::get ('video-delete/{video}','VideoController@delete');
+
 });

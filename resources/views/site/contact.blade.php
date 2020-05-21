@@ -39,5 +39,10 @@
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c914ce71c3becf543266f1cba994220e535f555ea8f6ae095cda0af690fd160&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     </div>
 
+    <div class="contact-item">
+        <h4>Петропавловск, Павлодар</h4>
+        <div><b>Виктор Першин </b> +7 777 797 73 03 - менеджер по продажам</div>
+    </div>
+
 </div>
 @stop

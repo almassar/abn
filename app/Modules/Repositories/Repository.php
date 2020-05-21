@@ -109,7 +109,7 @@ abstract class Repository implements RepositoryInterface
 
 	public function orderBy($column, $direction = 'asc')
     {
-        $this->model = $this->model->orderBy($column, $direction = 'asc');
+        $this->model = $this->model->orderBy($column, $direction);
         return $this;
     }
 }

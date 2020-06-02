@@ -88,8 +88,8 @@
             <li>
                 <a href="{{ url('products/3') }}">
                     {{--<span><i class="fas fa-pen-fancy fa-fw"></i></span>--}}
-                    <div style="float: left; border:0px #44C3E6 solid; margin-right: 2px;">
-                        <img style="width: 40px;" src="{{ asset('images/2.png')  }}" alt="">
+                    <div style="float: left; border:0px #44C3E6 solid; margin-right: 5px;">
+                        <img style="width: 50px;" src="{{ asset('images/2.png')  }}" alt="">
                     </div>
 
                     <div style="border:0px black solid; margin-left: -5px;">

@@ -45,7 +45,7 @@
 <div class="container">
     <div class="row align-items-center justify-content-between">
 
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-10">
             <div class="logo">
                 <a href="{{ url('/') }}">
                     <img src="{{ asset('images/logo.png')}}">
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div class="col-xl-6 header-contact">
+        <div class="col-xl-6 col-14 header-contact">
             <div><span><i class="fas fa-mobile-alt fa-fw"></i></span>+7 (771) 797-73-40</div>
             <div><span><i class="fas fa-envelope fa-fw"></i></span> direction@abntechnology.kz</div>
         </div>

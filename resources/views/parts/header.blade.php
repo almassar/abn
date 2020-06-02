@@ -87,8 +87,14 @@
         <ul>
             <li>
                 <a href="{{ url('products/3') }}">
-                    <span><i class="fas fa-pen-fancy fa-fw"></i></span>
-                    Обработка почвы
+                    {{--<span><i class="fas fa-pen-fancy fa-fw"></i></span>--}}
+                    <div style="float: left; border:0px #44C3E6 solid; margin-right: 2px;">
+                        <img style="width: 40px;" src="{{ asset('images/2.png')  }}" alt="">
+                    </div>
+
+                    <div style="border:0px black solid; margin-left: -5px;">
+                        Обработка почвы
+                    </div>
                 </a>
 
                 <ul>
@@ -100,7 +106,7 @@
                 </ul>
             </li>
 
-            <li>
+            <li style="text-align: center;">
                 <a href="{{ url('products/1') }}">
                     <span><i class="fas fa-tint fa-fw"></i></span>
                     Опрыскиватели
@@ -139,15 +145,21 @@
 
             <li>
                 <a href="{{ url('products/7') }}">
-                    <span><i class="fas fa-snowplow fa-fw"></i></span>
-                    Уборочные агрегаты
+                    <!--<span><i class="fas fa-snowplow fa-fw"></i></span>-->
+                    <img style="width: 40px; float: left" src="{{ asset('images/1.png')  }}" alt="">
+                    <div>
+                        Уборочные агрегаты
+                    </div>
                 </a>
             </li>
             
-            <li>
+            <li style="text-align: center">
                 <a href="{{ url('products/6') }}">
-                    <span><i class="fas fa-tree fa-fw"></i></span>
-                    Семена
+                    {{--<span><i class="fas fa-tree fa-fw"></i></span>--}}
+                    <img style="width: 28px;" src="{{ asset('images/3.png')  }}" alt="">
+
+                        Семена
+
                 </a>
             </li>
 

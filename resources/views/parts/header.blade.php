@@ -143,7 +143,7 @@
                 </ul>
             </li>
 
-            <li>
+            <li style="padding-left: 10px;">
                 <a href="{{ url('products/7') }}">
                     <!--<span><i class="fas fa-snowplow fa-fw"></i></span>-->
                     <img style="width: 40px; float: left" src="{{ asset('images/1.png')  }}" alt="">

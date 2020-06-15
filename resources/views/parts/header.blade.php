@@ -59,7 +59,7 @@
         </div>
 
         <div class="col-xl-6 col-14 header-contact">
-            <div><span><i class="fas fa-mobile-alt fa-fw"></i></span>+7 (771) 797-73-40</div>
+            <div><span><i class="fas fa-mobile-alt fa-fw"></i></span>+7 (747) 094-54-49</div>
             <div><span><i class="fas fa-envelope fa-fw"></i></span> direction@abntechnology.kz</div>
         </div>
 

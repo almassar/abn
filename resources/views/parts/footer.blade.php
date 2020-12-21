@@ -3,16 +3,32 @@
 
 <div class="col-xl-4">
 
-<div class="logo-footer">
-    <h4>АБН</h4>
-    <span>технологии</span>
-</div>
+    <div class="logo-footer">
+        <h4>АБН</h4>
+        <span>технологии</span>
+    </div>
 
 </div>
 
  <div class="col-xl-7 footer-contact">
     <div><span><i class="fas fa-mobile-alt fa-fw"></i></span> +7 (771) 797-73-40</div>
     <div><span><i class="fas fa-envelope fa-fw"></i></span> direction@abntechnology.kz</div>
+
+    <div style="margin-top: 10px;">
+        <a target="_blank" href="https://facebook.com/ABNTechnology-114888127047840">
+            <img style="width:30px;" src="{{ asset('images/facebook.png') }}" alt=""> 
+            ABNTechnology
+        </a>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <a target="_blank" href="https://www.instagram.com/abntechnology">
+            <img style="width:30px;" src="{{ asset('images/instagram.png') }}" alt="">
+            @abntechnology
+        </a>
+
+    </div>
+
 </div>
 
 <div class="col-xl-13 footer-menu">

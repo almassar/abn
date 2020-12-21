@@ -67,10 +67,10 @@
             <form action="{{ url('search') }}" method="post">
                 @csrf
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Поиск ..." aria-label="Поиск компании">
+                    <input type="text" value="{{ $search ?? '' }}" class="form-control" name="search" required placeholder="Поиск ..." aria-label="Поиск компании">
 
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
+                        <button class="btn btn-primary" type="submit">
                             <span><i class="fa fa-search"></i></span>
                             Найти
                         </button >

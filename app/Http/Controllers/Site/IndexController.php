@@ -10,6 +10,7 @@ use App\Modules\Slides\SlideRepository;
 use App\Modules\Partners\Partner;
 use App\Modules\Partners\PartnerRepository;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends SiteBaseController
 {
@@ -47,6 +48,20 @@ class IndexController extends SiteBaseController
         $seo['title'] = 'О компании';
 
         return view('site.about')->with(compact('seo'));
+      
+    }
+
+    public function search(Request $request)
+    {
+        $seo['title'] = 'Результаты поиска';
+
+        $search = $request->input('search');
+
+        $products = DB::table('products')
+                    ->where('name', 'like', "%$search%")
+                    ->get();
+
+        return view('site.search')->with(compact('products', 'search', 'seo'));
       
     }
 

@@ -1,43 +1,54 @@
 <div class="header-menu">
 <div class="container">
+    <div class="row justify-content-between">
+        <div class="col-20">
     <ul>
         <li>
             <a href="{{ url('/') }}">
                 <span><i class="fas fa-home fa-fw"></i></span>
-                Главная
+                {{ session('lang') == 'ru' ? 'Главная' : 'Main Page' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('news') }}">
                 <span><i class="fas fa-newspaper fa-fw"></i></span>
-                Новости
+                {{ session('lang') == 'ru' ? 'Новости' : 'News' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('partners') }}">
                 <span><i class="fas fa-handshake fa-fw"></i></span>
-                Партнеры
+                {{ session('lang') == 'ru' ? 'Партнеры' : 'Partners' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('videos') }}">
                 <span><i class="fas fa-video fa-fw"></i></span>
-                Видео
+                {{ session('lang') == 'ru' ? 'Видео' : 'Video' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('about') }}">
                 <span><i class="fas fa-building fa-fw"></i></span>
-                О компании
+                {{ session('lang') == 'ru' ? 'О компании' : 'About the company' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('contact') }}">
                 <span><i class="fas fa-phone-alt fa-fw"></i></span>
-                Контакты
+                {{ session('lang') == 'ru' ? 'Контакты' : 'Contacts' }} 
             </a>
         </li>
     </ul>
+</div>
+
+    <div class="col-4">
+
+        <a href="{{ url('lang/ru') }}">РУС</a>
+        <a href="{{ url('lang/en') }}">ENG</a>
+
+    </div>
+</div>
 </div>
 </div>
 
@@ -67,12 +78,13 @@
             <form action="{{ url('search') }}" method="post">
                 @csrf
                 <div class="input-group">
-                    <input type="text" value="{{ $search ?? '' }}" class="form-control" name="search" required placeholder="Поиск ..." aria-label="Поиск компании">
+                    <input type="text" value="{{ $search ?? '' }}" class="form-control" name="search" required 
+                    placeholder="{{ session('lang') == 'ru' ? 'Поиск...' : 'Search...' }}" aria-label="Поиск компании">
 
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit">
                             <span><i class="fa fa-search"></i></span>
-                            Найти
+                            {{ session('lang') == 'ru' ? 'Найти' : 'Find' }}
                         </button >
                     </div>
                 </div>
@@ -93,7 +105,7 @@
                     </div>
 
                     <div style="border:0px black solid; margin-left: -5px;">
-                        Обработка почвы
+                        {{ session('lang') == 'ru' ? 'Обработка почвы' : 'Soil cultivation' }}  
                     </div>
                 </a>
 
@@ -109,7 +121,7 @@
             <li style="text-align: center;">
                 <a href="{{ url('products/1') }}">
                     <span><i class="fas fa-tint fa-fw"></i></span>
-                    Опрыскиватели
+                    {{ session('lang') == 'ru' ? 'Опрыскиватели' : 'Sprayers' }}    
                 </a>
 
                 <ul>
@@ -128,7 +140,7 @@
             <li>
                 <a href="{{ url('products/2') }}">
                     <span><i class="fas fa-tractor fa-fw"></i></span>
-                    Посевная техника
+                    {{ session('lang') == 'ru' ? 'Посевная техника' : 'Sowing equipment' }}    
                 </a>
 
                 <ul>
@@ -148,7 +160,7 @@
                     <!--<span><i class="fas fa-snowplow fa-fw"></i></span>-->
                     <img style="width: 40px; float: left" src="{{ asset('images/1.png')  }}" alt="">
                     <div>
-                        Уборочные агрегаты
+                        {{ session('lang') == 'ru' ? 'Уборочные агрегаты' : 'Harvesting units' }}     
                     </div>
                 </a>
             </li>
@@ -158,7 +170,7 @@
                     {{--<span><i class="fas fa-tree fa-fw"></i></span>--}}
                     <img style="width: 28px;" src="{{ asset('images/3.png')  }}" alt="">
 
-                        Семена
+                    {{ session('lang') == 'ru' ? 'Семена' : 'seeds' }}
 
                 </a>
             </li>
@@ -166,7 +178,7 @@
             <li>
                 <a href="{{ url('products/4') }}">
                     <span><i class="fas fa-seedling fa-fw"></i></span>
-                    Удобрения и СЗР
+                    {{ session('lang') == 'ru' ? 'Удобрения и СЗР' : 'Fertilizers and PPP' }}
                 </a>
                 <ul>
                     <li><a href="{{ url('products/type/7') }}">Минеральные удобрения ИЗАГРИ</a></li>
@@ -177,7 +189,7 @@
             <li>
                 <a href="{{ url('products/5') }}">
                     <span><i class="fas fa-cogs fa-fw"></i></span>
-                    Запасные части
+                    {{ session('lang') == 'ru' ? 'Запасные части' : 'Spare parts' }}
                 </a>
             </li>
 

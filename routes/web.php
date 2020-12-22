@@ -4,6 +4,8 @@ Route::group(['namespace' => 'Site' ], function () {
 
     Route::get('/', 'IndexController@index');
 
+    Route::get('lang/{lang}', 'IndexController@lang');
+
     Route::get('contact', 'IndexController@contact');
     Route::get('about', 'IndexController@about');
 

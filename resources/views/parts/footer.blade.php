@@ -35,32 +35,32 @@
         <ul>
         <li>
             <a href="{{ url('/') }}">
-                Главная
+                {{ session('lang') == 'ru' ? 'Главная' : 'Main Page' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('news') }}">
-                Новости
+                {{ session('lang') == 'ru' ? 'Новости' : 'News' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('partners') }}">
-                Партнеры
+                {{ session('lang') == 'ru' ? 'Партнеры' : 'Partners' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('videos') }}">
-                Видео
+                {{ session('lang') == 'ru' ? 'Видео' : 'Video' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('about') }}">
-                О компании
+                {{ session('lang') == 'ru' ? 'О компании' : 'About the company' }} 
             </a>
         </li>
         <li>
             <a href="{{ url('contact') }}">
-                Контакты
+                {{ session('lang') == 'ru' ? 'Контакты' : 'Contacts' }} 
             </a>
         </li>
     </ul>

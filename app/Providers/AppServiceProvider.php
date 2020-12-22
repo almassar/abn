@@ -21,6 +21,9 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('flash', function(Container $app) {
             return new Flash($app['session.store']);
         });
+
+        if (!session()->has('lang'))
+            session(['lang' => 'ru']);
     }
 
     /**

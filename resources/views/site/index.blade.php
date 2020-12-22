@@ -20,10 +20,16 @@
                 <div class="block-service">
                     <div class="header-service">
                         <span><i class="fas fa-certificate fa-fw"></i></span>
-                        <h4>Качество</h4>
+                        <h4> {{ session('lang') == 'ru' ? 'Качество' : 'Quality' }}</h4>
                     </div>
                     <p>
-                        Адаптируя существующие технологии в разных условиях Казахстана, мы особое внимание уделяем качеству соблюдения технологий, а также качеству используемых для этого орудий и препаратов.
+                        @if(session('lang') == 'ru')
+                            Адаптируя существующие технологии в разных условиях Казахстана, мы особое внимание уделяем качеству соблюдения технологий, а также качеству используемых для этого орудий и препаратов.
+                    
+                        @else                            
+                            Adapting existing technologies in different conditions of Kazakhstan, we pay special attention to the quality of technology compliance, as well as the quality of tools and drugs remedies for this.
+                        
+                        @endif
                     </p>
                 </div>
 
@@ -33,10 +39,14 @@
                 <div class="block-service">
                 <div class="header-service">
                     <span><i class="fas fa-hand-holding-usd fa-fw"></i></span>
-                    <h4>Выгода</h4>
+                    <h4>{{ session('lang') == 'ru' ? 'Выгода' : 'Benefit'}} </h4>
                     </div>
                     <p>
+                        @if(session('lang') == 'ru')
                         Мы рассматриваем каждого корпоративного клиента как экономический объект, который имеет одно состояние в начале работы с нами и другое  и по результатам работы с нами.
+                        @else 
+                        We consider each corporate client as an economic object that has one condition at the beginning working with us and another condition based on the results of working with us.
+                        @endif
                     </p>
                 </div>
             </div>
@@ -45,10 +55,17 @@
                 <div class="block-service">
                 <div class="header-service">
                     <span><i class="fas fa-handshake fa-fw"></i></span>
-                    <h4>Партнеры</h4>
+                    <h4>{{ session('lang') == 'ru' ? 'Партнеры' : ' Partners' }}</h4>
                     </div>
                     <p>
-                    Мы сотрудничаем с ведущими производителями, финансовыми институтами, опытными станциями, учеными, агросообществами!
+                        @if(session('lang') == 'ru')
+                        Мы сотрудничаем с ведущими производителями, финансовыми институтами, опытными станциями, учеными, агросообществами!
+                        
+                        @else
+                        We cooperate with leading manufacturers, financial institutions, experienced stations, scientists, agricultural communities!
+                  
+
+                    @endif
                     </p>
                 </div>
             </div>

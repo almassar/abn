@@ -65,4 +65,17 @@ class IndexController extends SiteBaseController
       
     }
 
+    public function lang($lang)
+    {
+        if (! in_array($lang, ['en', 'es', 'fr'])) {
+            abort(400);
+        }
+    
+        \App::setLocale($lang);
+        session(['lang' => $lang]);
+
+        return redirect()->back();
+      
+    }
+
 }

@@ -20,6 +20,8 @@ Route::group(['namespace' => 'Site' ], function () {
     Route::get('videos',           'VideoController@index');
 
     Route::post('search',          'IndexController@search');
+
+    Route::get('remove-pz',             'IndexController@removeRowPz');
 });
 
 

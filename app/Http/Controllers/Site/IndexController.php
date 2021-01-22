@@ -78,4 +78,9 @@ class IndexController extends SiteBaseController
       
     }
 
+    public function removeRowPz()
+    {
+        
+    }
+
 }

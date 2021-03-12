@@ -11,7 +11,7 @@
         
         <div>г.Уральск, ул. Жангир Хана 35/6</div>
         <div><b>Тел.:</b> +7 (777)-797 63 36</div>
-        <div><b>Email:</b> direction@abntechnology.kz</div>
+        <div><b>Email:</b> abn@abntechnology.kz</div>
 
         <div><b>Бухгалтерии:</b> +7 (777)-797 78 81</div>
         <div><b>Email:</b> finance@abntechnology.kz</div>

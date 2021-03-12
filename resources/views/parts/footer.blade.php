@@ -11,8 +11,8 @@
 </div>
 
  <div class="col-xl-7 footer-contact">
-    <div><span><i class="fas fa-mobile-alt fa-fw"></i></span> +7 (771) 797-73-40</div>
-    <div><span><i class="fas fa-envelope fa-fw"></i></span> direction@abntechnology.kz</div>
+    <div><span><i class="fab fa-whatsapp fa-fw"></i></span> +7 (771) 797-73-40</div>
+    <div><span><i class="fas fa-envelope fa-fw"></i></span> abn@abntechnology.kz</div>
 
     <div style="margin-top: 10px;">
         <a target="_blank" href="https://facebook.com/ABNTechnology-114888127047840">
